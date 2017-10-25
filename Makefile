@@ -10,3 +10,7 @@ all:
 	docker build -t $(IMAGE_NAME):1.9 1.9/stretch
 	docker build -t $(IMAGE_NAME):1.9-extra 1.9/extra
 	docker build -t $(IMAGE_NAME):1.9-alpine-extra 1.9/alpine/extra
+
+.PHONY:push
+push:
+	docker push $(IMAGE_NAME)
