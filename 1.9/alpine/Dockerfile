@@ -1,6 +1,7 @@
 FROM golang:1.9-alpine
 
 RUN set -ex; \
+    apk add --update git; \
     go get -u -v -t \
         github.com/alecthomas/gometalinter \
         github.com/Masterminds/glide \

@@ -1,4 +1,4 @@
-FROM Azuka/ci-golang:1.8
+FROM azuka/ci-golang:1.9
 
 RUN set -ex; \
     apt-get update && apt-get install -y ruby-full; \
