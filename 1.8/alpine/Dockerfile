@@ -1,4 +1,4 @@
-FROM golang:1.8-alpine
+FROM golang:1.8-alpine3.6
 
 RUN set -ex; \
     apk add --update git; \
