@@ -2,11 +2,12 @@
 
 Golang images with common dependencies for CI.
 
+Built automatically every week with GitHub Actions.
+
 ## Variants
 - `<version>`: plain golang with dependencies:
-  - gometalinter
-  - glide
-  - dep
+  - gotestsum
+  - golangci-lint
   - go-junit-report
   - gocov
   - gocov-xml
@@ -16,15 +17,15 @@ Golang images with common dependencies for CI.
   - jq
 
 ## Tags
-- `1.9`, `latest` [Dockerfile](1.9/stretch/Dockerfile)
-- `1.9-extra` [Dockerfile](1.9/extra/Dockerfile)
-- `1.9-node` [Dockerfile](1.9/node/Dockerfile)
-- `1.9-alpine` [Dockerfile](1.9/alpine/Dockerfile)
-- `1.9-alpine-extra` [Dockerfile](1.9/alpine/extra/Dockerfile)
-- `1.9-alpine-node` [Dockerfile](1.9/alpine/node/Dockerfile)
-- `1.8` [Dockerfile](1.8/stretch/Dockerfile)
-- `1.8-extra` [Dockerfile](1.8/extra/Dockerfile)
-- `1.8-node` [Dockerfile](1.8/node/Dockerfile)
-- `1.8-alpine` [Dockerfile](1.8/alpine/Dockerfile)
-- `1.8-alpine-extra` [Dockerfile](1.8/alpine/extra/Dockerfile)
-- `1.8-alpine-node` [Dockerfile](1.8/alpine/node/Dockerfile)
+- `1.16`, `latest` [Dockerfile](1.16/stretch/Dockerfile)
+- `1.16-extra` [Dockerfile](1.16/extra/Dockerfile)
+- `1.16-node` [Dockerfile](1.16/node/Dockerfile)
+- `1.16-alpine` [Dockerfile](1.16/alpine/Dockerfile)
+- `1.16-alpine-extra` [Dockerfile](1.16/alpine/extra/Dockerfile)
+- `1.16-alpine-node` [Dockerfile](1.16/alpine/node/Dockerfile)
+- `1.15` [Dockerfile](1.15/stretch/Dockerfile)
+- `1.15-extra` [Dockerfile](1.15/extra/Dockerfile)
+- `1.15-node` [Dockerfile](1.15/node/Dockerfile)
+- `1.15-alpine` [Dockerfile](1.15/alpine/Dockerfile)
+- `1.15-alpine-extra` [Dockerfile](1.15/alpine/extra/Dockerfile)
+- `1.15-alpine-node` [Dockerfile](1.15/alpine/node/Dockerfile)
