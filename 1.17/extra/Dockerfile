@@ -1,4 +1,4 @@
-FROM azuka/ci-golang:1.15
+FROM azuka/ci-golang:1.17
 
 RUN set -ex; \
     apt-get update && apt-get install -y jq ruby-full; \

@@ -1,4 +1,4 @@
-FROM azuka/ci-golang:1.15-alpine
+FROM azuka/ci-golang:1.17-alpine
 
 RUN set -ex; \
   apk update && apk upgrade && apk --update add \
