@@ -1,8 +1,8 @@
 IMAGE_NAME=azuka/ci-golang
-GOLANG_CI_LINT_VERSION=1.44.1
+GOLANG_CI_LINT_VERSION=1.45.0
 
 .PHONY:all
-all: 1.16 1.17
+all: 1.16 1.17 1.18
 
 .PHONY: 1.16
 1.16:
@@ -21,6 +21,15 @@ all: 1.16 1.17
 	docker build --build-arg GOLANG_CI_LINT_VERSION=$(GOLANG_CI_LINT_VERSION) --pull -t $(IMAGE_NAME):1.17-alpine 1.17/alpine
 	docker build -t $(IMAGE_NAME):1.17-alpine-extra 1.17/alpine/extra
 	docker build -t $(IMAGE_NAME):1.17-alpine-node 1.17/alpine/node
+
+.PHONY: 1.18
+1.18:
+	docker build --build-arg GOLANG_CI_LINT_VERSION=$(GOLANG_CI_LINT_VERSION) --pull -t $(IMAGE_NAME):latest -t $(IMAGE_NAME):1.18 1.18/buster
+	docker build -t $(IMAGE_NAME):1.18-extra 1.18/extra
+	docker build -t $(IMAGE_NAME):1.18-node 1.18/node
+	docker build --build-arg GOLANG_CI_LINT_VERSION=$(GOLANG_CI_LINT_VERSION) --pull -t $(IMAGE_NAME):1.18-alpine 1.18/alpine
+	docker build -t $(IMAGE_NAME):1.18-alpine-extra 1.18/alpine/extra
+	docker build -t $(IMAGE_NAME):1.18-alpine-node 1.18/alpine/node
 
 .PHONY: push
 push:
